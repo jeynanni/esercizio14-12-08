@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.myArray.map(myArray => <Array id={myArray.id} name={myArray.name}/>)}
+        {this.state.myArray.map((item,index) => <Array  key={index.toString()} id={item.id} name={item.name}/>)}
         
       </div>
     );
